@@ -139,3 +139,21 @@ a {
 .author a {
   color: #2368bd;
 }
+
+.home {
+  text-align: center;
+  margin: auto;
+  padding-top: 10%;
+  font-size: 1.5rem;
+}
+
+.btn-home {
+  display: block;
+  background: #1a4e8e;
+  text-align: center;
+  margin: 1rem auto 0 auto;
+  padding: 1rem 1rem;
+  border-radius: 0;
+  color: white;
+  font-size: 1rem;
+}

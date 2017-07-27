@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import './App.css';
+import Home from './Home';
 import Github from './Github';
 
 class App extends React.Component {
@@ -10,8 +11,8 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Github} />
-          {/* <Route path="/user/:id" component={Users} /> */}
+          <Route exact path="/" component={Home} />
+          <Route path="/github" component={Github} />
         </Switch>
       </BrowserRouter>
     );
