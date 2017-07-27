@@ -6,7 +6,6 @@ import Home from './Home';
 import Github from './Github';
 
 class App extends React.Component {
-
   render() {
     return (
       <BrowserRouter>
