@@ -9,8 +9,8 @@ export default class Profile extends React.Component {
     if (data.notFound === 'Not Found')
       return (
          <div className="notfound">
-            <h2>Oops !!!</h2>
-            <p>The Component Couldn't Find The You Were Looking For . Try Again </p>
+           <h2>Oops !!!</h2>
+           <p>Username not found, please correct your input..</p>
          </div>
       );
     else
@@ -27,7 +27,7 @@ export default class Profile extends React.Component {
               <a href={followers} target="_blank" title="Number Of Followers"><i>{data.followers}</i><span>Followers</span></a>
             </li>
             <li>
-              <a href={repositories} target="_blank" title="Number Of Repository"><i>{data.repos}</i><span>Repositoriy</span></a>
+              <a href={repositories} target="_blank" title="Number Of Repository"><i>{data.repos}</i><span>Repository</span></a>
             </li>
             <li>
               <a href={following} target="_blank" title="Number Of Following"><i>{data.following}</i><span>Following</span></a>
