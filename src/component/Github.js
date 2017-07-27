@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import SearchProfile from './Search';
 import Profile from './Profile';
@@ -49,6 +50,11 @@ class Github extends React.Component {
   render() {
     return (
       <div className="Github">
+        <Link to="/">
+          <button className="btn-home">
+            Back to Home
+          </button>
+        </Link>
         <section id="card">
           <SearchProfile fetchProfile={this._fetchProfile.bind(this)}/>
           <Profile data={this.state} />
